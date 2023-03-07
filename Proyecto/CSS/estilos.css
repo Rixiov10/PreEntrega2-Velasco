@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Encabezado y menu */
+
+.encabezado {
+    padding: 20px 40px;
+    background-color: #10162F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.menu__item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* seccion principal */
+
+.seccionPrincipal {
+    background-image: url("../Imagenes/Learning.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionPrincipal h2 {
+    background-color: #CEAE25;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.seccionPrincipal h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* lenguajes */
+
+.lenguajes {
+    padding: 100px;
+}
+
+.lenguajes h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: black;
+    background-color: #CEAE25;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.lenguajes h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 40px;
+}
+
+.tarjeta {
+    position: relative;
+}
+
+.tarjeta__imagen {
+    width: 325px;
+    height: 250px;
+}
+
+.tarjeta__titulo {
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    border-radius: 20px;
+}
+
+/* carreras */
+
+.carreras {
+    background-image: url("../Imagenes/Carrera.jpg");
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        ". texto";
+}
+
+.carreras__texto {
+    grid-area: texto;
+    color: white;
+    background-color: rgba(16, 22, 47, 0.8);
+    padding: 100px 60px;
+}
+
+.borde {
+    border-bottom: 3px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+/*footer*/
+
+.pie {
+    background-color: #10162F;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+  }
+
+  /* formulario registro */
+
+  form {
+    background-color: #FCF1E6;
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+  }
+
+  label {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    background-color: #3513dc;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  /* sobre mi */
+
+  .container {
+    padding: 200px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    display: block;
+    margin: 0 auto;
+  }
