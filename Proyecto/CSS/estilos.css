@@ -88,6 +88,7 @@
 }
 
 .tarjeta__imagen {
+    border-radius: 12px;
     width: 325px;
     height: 250px;
 }
@@ -101,6 +102,55 @@
     padding: 16px;
     border-radius: 20px;
 }
+
+/* Animación 1 */
+.tarjeta:nth-child(1) .tarjeta__imagen {
+    animation: giro 3s ease-in-out infinite;
+  }
+  
+  @keyframes giro {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animación 2 */
+  .tarjeta:nth-child(2) .tarjeta__imagen {
+    animation: mover-arriba 1s ease-in-out infinite;
+  }
+  
+  @keyframes mover-arriba {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación 3 */
+  .tarjeta:nth-child(3) .tarjeta__imagen {
+    animation: desvanecer 1s ease-in-out infinite;
+  }
+  
+  @keyframes desvanecer {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
 /* carreras */
 
@@ -174,10 +224,11 @@
   /* sobre mi */
 
   .container {
-    padding: 200px;
+    padding: 100px;
   }
 
   h2 {
+    text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 40px;
@@ -197,3 +248,20 @@
     display: block;
     margin: 0 auto;
   }
+
+  /* media queries */
+
+  @media (max-width: 768px) {
+    /* estilos para pantallas de 768px de ancho o menos */
+    label {
+      font-size: 14px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 10px;
+    }
+  }
+  
